@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Александра Богатенко](https://up.htmlacademy.ru/htmlcss/17/user/395151).
-* Наставник: `Anton Popov`.
+* Наставник: `Oleg Petrovv`.
 
 ---
 
