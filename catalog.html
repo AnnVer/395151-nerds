@@ -5,6 +5,7 @@
 		<title>HTML Academy: каталог Нёрдс</title>
 	</head>
 	<body>
+	
 		<header class="header">
 			<div class="container">
 				<div class="header_top">
@@ -27,44 +28,43 @@
 
 		<main class="main">
 			<div class="container">
-				<div class="filter">
-					<h3>Стоимость:</h3>
-					<div class="range_filter">
-						<div class="range_controls">
-							<div class="scale">
-								<div class="bar"></div>
+				<form action="#" method="post" name="filter_form" class="filter_form">
+					<fieldset class="filter_fieldset">
+						<h3>Стоимость:</h3>
+						<div class="range_filter">
+							<div class="range_controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="toggle toggle_min"></div>
+								<div class="toggle toggle_max"></div>
 							</div>
-							<div class="toggle toggle_min"></div>
-							<div class="toggle toggle_max"></div>
+							<div class="price_control">
+								<label class="min_price">от <input name="min_price" type="text" value="0"></label>
+								<label class="max_price">до <input name="max_price" type="text" value="15000"></label>
+							</div>
 						</div>
-						<div class="price_control">
-							<label class="min_price">от <input name="min_price" type="text" value="0"></label>
-							<label class="max_price">до <input name="max_price" type="text" value="15000"></label>
-						</div>
-					</div>
-					
-					<form action="#" method="post" name="filter_form" class="filter_form">
-						<div class="property_item">
-							<h3>Сетка:</h3>
-							<input type="radio" id="grid_adaptiv" name="grid" value="grid_adaptiv" checked>
-							<label for="grid_adaptiv">Адаптивная</label>
-							<input type="radio" id="grid_fix" name="grid" value="grid_fix">
-							<label for="grid_fix">Фиксированная</label>
-							<input type="radio" id="grid_liquid" name="grid" value="grid_liquid">
-							<label for="grid_liquid">Резиновая</label>
-						</div>
+					</fieldset>
+					<fieldset class="filter_fieldset">
+						<h3>Сетка:</h3>
+						<input type="radio" id="grid_adaptive" name="grid" value="grid_adaptive" checked>
+						<label for="grid_adaptive">Адаптивная</label>
+						<input type="radio" id="grid_fix" name="grid" value="grid_fix">
+						<label for="grid_fix">Фиксированная</label>
+						<input type="radio" id="grid_liquid" name="grid" value="grid_liquid">
+						<label for="grid_liquid">Резиновая</label>
+					</fieldset>
 							
-						<div class="property_item">
-							<h3>Особенности:</h3>
-							<input type="checkbox" name="features" value="slider" checked>Слайдер
-							<input type="checkbox" name="features" value="profit">Блок преимуществ
-							<input type="checkbox" name="features" value="news" checked>Новости
-							<input type="checkbox" name="features" value="gallery">Галерея
-							<input type="checkbox" name="features" value="cart">Корзина>
-							<button type="submit" class="btn btn_filter">Показать</button>
-						</div>
-					</form>
-				</div>
+					<fieldset class="filter_fieldset">
+						<h3>Особенности:</h3>
+						<input type="checkbox" name="features" value="slider" checked>Слайдер
+						<input type="checkbox" name="features" value="profit">Блок преимуществ
+						<input type="checkbox" name="features" value="news" checked>Новости
+						<input type="checkbox" name="features" value="gallery">Галерея
+						<input type="checkbox" name="features" value="cart">Корзина
+					</fieldset>
+					<button type="submit" class="btn btn_filter">Показать</button>
+				</form>
 			
 				<section class="catalog_block">
 					<div class="catalog_sort">
@@ -85,8 +85,8 @@
 							<a class="templates_item" href="#"><img src="img/sedona.jpg" width="360" height="615" 
 							alt="Информационный сайт &ldquo;Sedona&rdquo;"></a>
 							<div class="template_description">
-								<h4>Седона</h4>
-								<p>Информационный сайт<br>для туристов</p>
+								<h3>Седона</h3>
+								<p>Информационный сайт для туристов</p>
 								<a class="btn btn_template" href="#">9900 р.</a>
 							</div>
 						</div>
@@ -95,8 +95,8 @@
 							<a class="templates_item" href="#"><img src="img/pink.jpg" width="360" height="615" 
 							alt="Лендинг &ldquo;Pink APP&rdquo;"></a>
 							<div class="template_description">
-								<h4>Pink APP</h4>
-								<p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+								<h3>Pink APP</h3>
+								<p>Продуктовый лендинг приложения для iOS и Android</p>
 								<a class="btn btn_template" href="#">9900 р.</a>
 							</div>
 						</div>
@@ -106,8 +106,8 @@
 						<a class="templates_item" href="#"><img src="img/barbershop.jpg" width="360" height="615" 
 						alt="Сайт &ldquo;Barbershop&rdquo;"></a>
 						<div class="template_description">
-							<h4>Barbershop</h4>
-							<p>Сайт салона красоты.<br>Для мужчин, да.</p>
+							<h3>Barbershop</h3>
+							<p>Сайт салона красоты. Для мужчин, да.</p>
 							<a class="btn btn_template" href="#">9900 р.</a>
 						</div>
 					</div>
@@ -116,8 +116,8 @@
 						<a class="templates_item" href="#"><img src="img/mishka.jpg" width="360" height="615" 
 						alt="Интернет-магазин &ldquo;Mishka&rdquo;"></a>
 						<div class="template_description">
-							<h4>Mishka</h4>
-							<p>Интернет-магазин<br>вязаных игрушек</p>
+							<h3>Mishka</h3>
+							<p>Интернет-магазин вязаных игрушек</p>
 							<a class="btn btn_template" href="#">9900 р.</a>
 						</div>
 					</div>
@@ -127,8 +127,8 @@
 						<a class="templates_item" href="#"><img src="img/aplus.jpg" width="360" height="615" 
 						alt="Лендинг &ldquo;A PLUS&rdquo;"></a>
 						<div class="template_description">
-							<h4>A PLUS</h4>
-							<p>Лендинг курсов повышения<br>квалификации</p>
+							<h3>A PLUS</h3>
+							<p>Лендинг курсов повышения квалификации</p>
 							<a class="btn btn_template" href="#">9900 р.</a>
 						</div>
 					</div>
@@ -137,32 +137,30 @@
 						<a class="templates_item" href="#"><img src="img/kvast.jpg" width="360" height="615" 
 						alt="Лендинг &ldquo;Кваст&rdquo;"></a>
 						<div class="template_description">
-							<h4>Kvast</h4>
-							<p>Промо-сайт производителя<br>крафтового кваса</p>
+							<h3>Kvast</h3>
+							<p>Промо-сайт производителя крафтового кваса></p>
 							<a class="btn btn_template" href="#">9900 р.</a>
 						</div>
 					</div>
 				
-					<div class="page_navigation">
-						<ul>
-							<li>
-								<a class="btn btn_page current" href="#">1</a>
-							</li>
-							<li>
-								<a class="btn btn_page" href="#">2</a>
-							</li>
-							<li>
-								<a class="btn btn_page" href="#">3</a>
-							</li>
-							<li>
-								<a class="btn btn_page" href="#">Следующая</a>
-							</li>
-						</ul>
-					</div>
+					<ul class="pagination">
+						<li>
+							<a class="btn btn_pagination current" href="#">1</a>
+						</li>
+						<li>
+							<a class="btn btn_pagination" href="#">2</a>
+						</li>
+						<li>
+							<a class="btn btn_pagination" href="#">3</a>
+						</li>
+						<li>
+							<a class="btn btn_pagination" href="#">Следующая</a>
+						</li>
+					</ul>
 				</section>
 			</div>	
-
 		</main>
+		
 		<footer class="footer">
 			<div class="container">
 				<section class="footer_contacts">
@@ -172,8 +170,20 @@
 						<p class="phone">тел. +7(812)275-75-75</p>
 						<a href="#" class="btn">Напишите нам</a>
 					</div>
+				</section>
 
-					<div class="feedback">
+				<section class="footer_social">	
+					<ul class="social_link">
+						<li><a href="https://vk.com/">ВКонтакте</a></li>
+						<li><a href="https://www.facebook.com/">Facebook</a></li>
+						<li><a href="https://www.instagram.com/">Instagram</a></li>
+					</ul>
+					<p class="footer_slogan">Давайте дружить, это выгодно!</p>
+					<span>Скидка 10% для друзей из социальных сетей</span>
+				</section>
+			</div>
+		</footer>
+		<div class="feedback">
 						<h2>Напишите нам</h2>
 						<form action="#" method="post" name="feedback" class="feedback_form">
 							<label for="name">Ваше имя:</label>
@@ -188,17 +198,5 @@
 							<button type="submit" class="btn btn_message">Отправить</button>
 						</form>
 					</div>
-				</section>
-				<section class="footer_social">	
-					<ul class="social_link">
-						<li><a href="https://vk.com/">ВКонтакте</a></li>
-						<li><a href="https://www.facebook.com/">Facebook</a></li>
-						<li><a href="https://www.instagram.com/">Instagram</a></li>
-					</ul>
-					<p class="footer_slogan">Давайте дружить, это выгодно!</p>
-					<span>Скидка 10% для друзей из социальных сетей</span>
-				</section>
-			</div>
-		</footer>
 	</body>
 </html>
